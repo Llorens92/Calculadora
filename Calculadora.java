@@ -106,7 +106,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addContainerGap(41, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("tab1", jPanel1);
+        jTabbedPane1.addTab("Botones", jPanel1);
 
         jRadioButton1.setText("Suma");
 
@@ -167,7 +167,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
-        jTabbedPane1.addTab("tab2", jPanel2);
+        jTabbedPane1.addTab("Radio", jPanel2);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Suma", "Resta", "Multiplica", "Divide" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +210,8 @@ public class Calculadora extends javax.swing.JFrame {
                 .addContainerGap(112, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("tab3", jPanel3);
+        jTabbedPane1.addTab("Combo", jPanel3);
+        jPanel3.getAccessibleContext().setAccessibleName("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -223,7 +224,8 @@ public class Calculadora extends javax.swing.JFrame {
             .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
-        jTabbedPane1.getAccessibleContext().setAccessibleName("Botones");
+        jTabbedPane1.getAccessibleContext().setAccessibleName("");
+        jTabbedPane1.getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
